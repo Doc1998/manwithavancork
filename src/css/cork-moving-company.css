@@ -1,0 +1,486 @@
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #hero-82 {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      /* Centers button */
+      text-align: center;
+      /* 144px - 300px - leaving extra space for the navigation */
+      padding: clamp(144px, 25.95vw, 18.75em) 1rem 0;
+      /* 130px - 200px */
+      padding-bottom: clamp(130px, 12.5vw, 25em);
+      position: relative;
+      z-index: 1;
+    }
+    #hero-82 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+    #hero-82 .cs-background:before {
+      /* Overlay */
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: .7;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      /* prevents the cursor from interacting with it */
+      pointer-events: none;
+    }
+    #hero-82 .cs-background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+    }
+    #hero-82 .cs-container {
+      width: 100%;
+      max-width: 67.5em;
+      margin: auto;
+    }
+    #hero-82 .cs-title {
+      /* 39px - 61px */
+      font-size: clamp(39px, 6.4vw, 3.8125rem);
+      font-weight: 700;
+      line-height: 1.2em;
+      text-align: center;
+      max-width: 51.8125rem;
+      /* 16px - 24px */
+      margin: 0 auto clamp(16px, 4vw, 1.5rem);
+      color: #fff;
+      position: relative;
+    }
+    #hero-82 .cs-title:after {
+      /* Divider Line */
+      content: '';
+      width: 6.25rem;
+      height: 0.5rem;
+      margin: clamp(16px, 4vw, 1.5rem) auto clamp(16px, 4vw, 1.5rem);
+      background: #CC860C;
+      opacity: 1;
+      position: relative;
+      display: block;
+    }
+    #hero-82 .cs-text {
+      /* 16px - 25px */
+      font-size: clamp(16px, 1.95vw, 1.5625rem);
+      line-height: 1.5em;
+      text-align: center;
+      width: 100%;
+      /* 464px - 800px */
+      max-width: clamp(464px, 60vw, 50rem);
+      margin: 0 auto;
+      /* 40px - 48px */
+      margin-bottom: clamp(40px, 4vw, 3rem);
+      color: #fff;
+    }
+    #hero-82 .cs-button-solid {
+      font-size: 1rem;
+      line-height: 3.5rem;
+      text-decoration: none;
+      font-weight: 700;
+      margin: auto;
+      color: #fff;
+      padding: 0 1.5rem;
+      background-color: #CC860C;
+      border-radius: 0.25rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+    #hero-82 .cs-button-solid:before {
+      content: '';
+      position: absolute;
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.25rem;
+      -webkit-transition: width .3s;
+      transition: width .3s;
+    }
+    #hero-82 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+  }
+  /* Dark Mode */
+  @media only screen and (min-width: 0em) {
+    body.dark-mode #hero-82:before,
+    body.dark-mode #hero-82:after {
+      background: var(--dark);
+    }
+    body.dark-mode #hero-82 .cs-background:before {
+      opacity: .85;
+    }
+  }
+                                  
+  /*-- -------------------------- -->
+<---    Side By Side Reverse    -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-r-579 {
+      /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+      font-family: 'Roboto', 'Arial', sans-serif;
+    }
+    #sbs-r-579 .cs-container {
+      width: 100%;
+      max-width: 80em;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 7vw, 4rem);
+    }
+    #sbs-r-579 .cs-content {
+      /* set text aling to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      max-width: 32.625rem;
+      /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+      padding: var(--sectionPadding);
+      padding-top: 0;
+      /* prevents padding from affecting width and height */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+    #sbs-r-579 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: inherit;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    #sbs-r-579 .cs-title {
+      font-size: var(--headerFontSize);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: inherit;
+      max-width: 43.75rem;
+      margin: 0 0 1rem 0;
+      color: var(--headerColor);
+      position: relative;
+    }
+    #sbs-r-579 .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      text-align: inherit;
+      width: 100%;
+      max-width: 40.625rem;
+      margin: 0 0 1rem 0;
+      color: var(--bodyTextColor);
+    }
+    #sbs-r-579 .cs-text:last-of-type {
+      /* makes last paragraph have a larger margin bottom to create more space between the text and button */
+      margin-bottom: 2rem;
+    }
+    #sbs-r-579 .cs-button-solid {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: #fff;
+      min-width: 9.375rem;
+      padding: 0 1.5rem;
+      background-color: var(--primary);
+      border-radius: 0.25rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+    }
+    #sbs-r-579 .cs-button-solid:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.25rem;
+      transition: width .3s;
+    }
+    #sbs-r-579 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+    #sbs-r-579 .cs-picture {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 18.75rem;
+    }
+    #sbs-r-579 .cs-picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbs-r-579 {
+      padding: var(--sectionPadding);
+    }
+    #sbs-r-579 .cs-container {
+      flex-direction: row;
+      justify-content: flex-end;
+      /* 60px - 128px */
+      gap: clamp(3.75rem, 10vw, 8rem);
+    }
+    #sbs-r-579 .cs-content {
+      width: 53%;
+      /* reset the padding, add the section padding back to the section container */
+      padding: 0;
+      /* sends it to the right in the 1st position */
+      order: -1;
+    }
+    #sbs-r-579 .cs-picture {
+      width: 47vw;
+      max-width: 30.875rem;
+      /* 518px - 700px */
+      height: clamp(32.375rem, 63vw, 43.75rem);
+      /* 16px - 28px, added margin right and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it right and bottom. This maintains consistent spacing right and bottom */
+      margin: 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem) 0;
+      position: relative;
+    }
+    #sbs-r-579 .cs-picture:before {
+      /* yellow box */
+      content: '';
+      width: 50%;
+      height: 60%;
+      background: var(--secondary);
+      opacity: 1;
+      display: block;
+      position: absolute;
+      /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+      bottom: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+      right: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+    }
+  }
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode #sbs-r-579 .cs-topper {
+      color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #sbs-r-579 .cs-title,
+    body.dark-mode #sbs-r-579 .cs-text {
+      color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #sbs-r-579 .cs-text {
+      opacity: .8;
+    }
+    body.dark-mode #sbs-r-579 .cs-picture:before {
+      background-color: var(--accent);
+    }
+  }
+   /*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #sbs-578 {
+      /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+      font-family: 'Roboto', 'Arial', sans-serif;
+    }
+    #sbs-578 .cs-container {
+      width: 100%;
+      max-width: 80em;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 7vw, 4rem);
+    }
+    #sbs-578 .cs-content {
+      /* set text aling to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      max-width: 32.625rem;
+      /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+      padding: var(--sectionPadding);
+      padding-top: 0;
+      /* prevents padding from affecting width and height */
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+    }
+    #sbs-578 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: inherit;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    #sbs-578 .cs-title {
+      font-size: var(--headerFontSize);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: inherit;
+      max-width: 43.75rem;
+      margin: 0 0 1rem 0;
+      color: var(--headerColor);
+      position: relative;
+    }
+    #sbs-578 .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5em;
+      text-align: inherit;
+      width: 100%;
+      max-width: 40.625rem;
+      margin: 0 0 1rem 0;
+      color: var(--bodyTextColor);
+    }
+    #sbs-578 .cs-text:last-of-type {
+      /* makes last paragraph have a larger margin bottom to create more space between the text and button */
+      margin-bottom: 2rem;
+    }
+    #sbs-578 .cs-button-solid {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      text-decoration: none;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+      color: #fff;
+      min-width: 9.375rem;
+      padding: 0 1.5rem;
+      background-color: var(--primary);
+      border-radius: 0.25rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+    }
+    #sbs-578 .cs-button-solid:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.25rem;
+      transition: width .3s;
+    }
+    #sbs-578 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+    #sbs-578 .cs-picture {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 18.75rem;
+    }
+    #sbs-578 .cs-picture img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #sbs-578 {
+      padding: var(--sectionPadding);
+    }
+    #sbs-578 .cs-container {
+      flex-direction: row;
+      justify-content: flex-start;
+      /* 60px - 128px */
+      gap: clamp(3.75rem, 10vw, 8rem);
+    }
+    #sbs-578 .cs-content {
+      width: 53%;
+      /* reset the padding, add the section padding back to the section container */
+      padding: 0;
+    }
+    #sbs-578 .cs-picture {
+      width: 47vw;
+      max-width: 30.875rem;
+      /* 518px - 700px */
+      height: clamp(32.375rem, 63vw, 43.75rem);
+      /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+      margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+      position: relative;
+    }
+    #sbs-578 .cs-picture:before {
+      /* yellow box */
+      content: '';
+      width: 50%;
+      height: 60%;
+      background: var(--secondary);
+      opacity: 1;
+      display: block;
+      position: absolute;
+      /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+      bottom: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+      left: calc(clamp(1rem, 2.4vw, 1.75rem)*-1);
+    }
+  }
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode #sbs-578 .cs-topper {
+      color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #sbs-578 .cs-title,
+    body.dark-mode #sbs-578 .cs-text {
+      color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #sbs-578 .cs-text {
+      opacity: .8;
+    }
+    body.dark-mode #sbs-578 .cs-picture:before {
+      background-color: var(--accent);
+    }
+  }
+                                                                 
