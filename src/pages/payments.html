@@ -1,0 +1,40 @@
+---
+layout: 'base.html'
+description: 'Meta description for the page'
+metaTitle: 'Title that shows up on google searches'
+tagTitle: 'Booking'
+preloadImg: '/images/cabinets2-1920w.webp'
+preloadCSS: '/css/payments.css'
+permalink: 'booking/'
+---
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">Booking</h1>
+    {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  </section>
+<!-- ============================================ -->
+    <!--                     CTA                      -->
+    <!-- ============================================ -->
+
+    <section id="cta-302">
+        <div class="cs-container">
+            <span class="cs-topper">Complete Your Booking</span>
+            <h2 class="cs-title">Thank You for Choosing Our Expert Removal Services</h2>
+            <p class="cs-text">
+                Do not hesitate to contact us if you have any questions. All payments are refundable up to 48 hours before the service.
+            </p>
+            <form class="cs-form" name="Contact Form" method="post">
+                <button class="cs-button-solid" type="submit">Pay Now</button>
+            </form>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background" aria-hidden="true">
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/scale-m.jpg">
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/scale.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/scale.jpg" alt="scale" width="1920" height="486">
+         </picture>
+    </section>
+                                

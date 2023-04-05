@@ -1,0 +1,182 @@
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    #cta-302 {
+      font-family: 'Roboto', 'Arial', sans-serif;
+      padding: var(--sectionPadding);
+      position: relative;
+      z-index: 1;
+    }
+    #cta-302 .cs-container {
+      width: 100%;
+      /* changes to 1280px at tablet */
+      max-width: 28.125em;
+      margin: auto;
+    }
+    #cta-302 .cs-topper {
+      font-size: var(--topperFontSize);
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    #cta-302 .cs-title {
+      font-size: var(--headerFontSize);
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: center;
+      max-width: 39.375rem;
+      margin: 0 auto 1rem;
+      color: #fff;
+      position: relative;
+    }
+    #cta-302 .cs-text {
+      font-size: var(--bodyFontSize);
+      line-height: 1.5rem;
+      text-align: center;
+      width: 100%;
+      max-width: 39.375rem;
+      margin: 0 auto;
+      /* 28px - 40px */
+      margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+      color: var(--bodyTextColorWhite);
+    }
+    #cta-302 .cs-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    #cta-302 .cs-input {
+      font-size: 1rem;
+      width: 100%;
+      height: clamp(2.875rem, 5.5vw, 3.5rem);
+      margin: 0;
+      padding: 0;
+      padding-left: 1.25rem;
+      border: none;
+      border-radius: 0.5rem;
+      /* prevents padding from adding to width and height */
+      box-sizing: border-box;
+      display: block;
+    }
+    #cta-302 .cs-input::placeholder {
+      color: #767676;
+    }
+    #cta-302 .cs-button-solid {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875em, 5.5vw, 3.5em);
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 0 1.5rem;
+      background-color: var(--primary);
+      border-radius: 0.5rem;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      /* prevents padding from adding to the width */
+      box-sizing: border-box;
+      transition: color .3s;
+    }
+    #cta-302 .cs-button-solid:before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 0%;
+      background: #000;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 0.5rem;
+      transition: width .3s;
+    }
+    #cta-302 .cs-button-solid:hover {
+      color: #fff;
+    }
+    #cta-302 .cs-button-solid:hover:before {
+      width: 100%;
+    }
+    #cta-302 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    #cta-302 .cs-background:before {
+      /* black overlay */
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: .6;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    #cta-302 .cs-background img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48em) {
+    #cta-302 .cs-container {
+      max-width: 80rem;
+    }
+    #cta-302 .cs-title {
+      width: 70vw;
+    }
+    #cta-302 .cs-text {
+      width: 75vw;
+    }
+    #cta-302 .cs-form {
+      flex-direction: row;
+    }
+    #cta-302 .cs-input {
+      width: 22.5rem;
+    }
+    #cta-302 .cs-button-solid {
+      width: 13.875rem;
+    }
+  }
+  /* Large Desktop 1300px - Parallax Scroll */
+  @media only screen and (min-width: 81.25em) {
+    #cta-302 {
+      background: url("https://csimg.nyc3.digitaloceanspaces.com/CTA/scale.jpg");
+      margin-top: 4em;
+      margin-bottom: 4em;
+      background-size: cover;
+      background-position: center 20%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    #cta-302 .cs-background img {
+      display: none;
+    }
+  }
+                                  
