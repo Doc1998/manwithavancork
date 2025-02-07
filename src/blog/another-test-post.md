@@ -19,7 +19,7 @@ Here are some tips and tricks to help you move your piano safely:
 
 Measure the piano and the doorways: Before you start moving your piano, make sure you know its exact dimensions and measure all the doorways, stairs, and passages it needs to go through. This will ensure that the piano will fit through all the narrow spaces and that you won't have any surprises on the moving day.
 
-Use proper equipment: Moving a piano requires special equipment like heavy-duty moving straps, a dolly, and moving blankets. A professional moving company in Cork will have all the necessary equipment to ensure a safe and efficient move.
+Use proper equipment: Moving a piano requires special equipment like heavy-duty moving straps, a dolly, and moving blankets. A professional moving company in Cork will have all the necessary equipment to ensure a safe and efficient move. You wouldnt hire a <a href="https://cleanway.ie">gutter cleaning company</a> to move a piano, it wouldn't be their expertise.
 
 Secure the piano lid: The piano lid should be securely locked in place before moving the piano. This will prevent it from opening accidentally and damaging the keys or the delicate internal parts.
 
