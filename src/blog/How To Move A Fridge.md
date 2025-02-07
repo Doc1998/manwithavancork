@@ -33,7 +33,7 @@ If you live in Cork, you can search for "moving company in Cork" or "man with a 
 
 Moving a large fridge is not a simple task and requires a professional moving company to ensure it is done safely and effectively. Here is an overview of the steps that professionals go through to move a large fridge:
 
-Preparation: Before the movers arrive, it's important to prepare the fridge for transport. Empty the contents of the fridge and freezer, and defrost it at least 24 hours prior to the move. This will prevent any water damage during the move.
+Preparation: Before the movers arrive, it's important to prepare the fridge for transport. Empty the contents of the fridge and freezer, and defrost it at least 24 hours prior to the move. This will prevent any water damage during the move. If your fridge is located in an attic, you should read <a href="/blog/how-to-move-large-objects-from-attic/">this article</a> on moving large objects from an attic
 
 Assessment: Once the movers arrive, they will assess the fridge and the surroundings. They will take note of any obstacles, such as stairs or narrow doorways, and plan the best way to move the fridge.
 
